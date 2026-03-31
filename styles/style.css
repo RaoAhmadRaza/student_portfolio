@@ -1,43 +1,65 @@
 /* Basic styling and responsiveness */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
 header {
-    background-color: #003366;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 main {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    border-radius: 8px;
-    margin-top: 20px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  margin-top: 20px;
 }
 
-/* Media Query for Responsiveness */
+/* --- Clubs Page Styles --- */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 600px) {
+ feature/events-page
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -45,6 +67,7 @@ main {
 }
 
 
+ feature/highlights-page
 /* --- Highlights Page Styles --- */
 .achievements-gallery {
     display: flex;
@@ -66,3 +89,43 @@ main {
         padding: 15px;
     }
 }
+=======
+/* --- Events Page Styles --- */
+.event-list {
+    list-style: none;
+    padding: 0;
+}
+.event-item {
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 5px solid #003366;
+    border-radius: 8px;
+}
+.event-date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #003366;
+    margin-right: 20px;
+    min-width: 70px;
+}
+@media (max-width: 500px) {
+    .event-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .event-date {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+=======
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+ main
+
