@@ -67,6 +67,29 @@ main {
 }
 
 
+ feature/highlights-page
+/* --- Highlights Page Styles --- */
+.achievements-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.highlight-post {
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+.highlight-post h2 {
+    color: #b38f00; /* Gold color for achievements */
+    margin-top: 0;
+}
+@media (max-width: 600px) {
+    .highlight-post {
+        padding: 15px;
+    }
+}
+=======
 /* --- Events Page Styles --- */
 .event-list {
     list-style: none;
@@ -105,3 +128,4 @@ main {
   }
 }
  main
+
