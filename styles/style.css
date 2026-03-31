@@ -43,3 +43,36 @@ main {
         align-items: center;
     }
 }
+
+
+/* --- Events Page Styles --- */
+.event-list {
+    list-style: none;
+    padding: 0;
+}
+.event-item {
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 5px solid #003366;
+    border-radius: 8px;
+}
+.event-date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #003366;
+    margin-right: 20px;
+    min-width: 70px;
+}
+@media (max-width: 500px) {
+    .event-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .event-date {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
